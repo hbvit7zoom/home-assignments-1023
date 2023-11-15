@@ -1,0 +1,47 @@
+package xml;
+
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
+
+import java.util.List;
+
+@JacksonXmlRootElement(localName = "book")
+public class Book {
+
+    @JacksonXmlProperty(isAttribute = true)
+    private String author;
+
+    @JacksonXmlProperty(localName = "name")
+    private String title;
+    private Long year;
+
+    public Book() {
+    }
+
+    public Book(String author, String title, int year) {
+        this.author = author;
+        this.title = title;
+        this.year = (long) year;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public long getYear() {
+        return year;
+    }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "author='" + author + '\'' +
+                ", title='" + title + '\'' +
+                ", year=" + year +
+                '}';
+    }
+}
