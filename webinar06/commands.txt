@@ -1,0 +1,22 @@
+docker pull postgres:13.8-alpine
+
+docker run -e POSTGRES_DB=test -e POSTGRES_USER=user -e POSTGRES_PASSWORD=pass -p 5432:5432 postgres:13.8-alpine
+
+CREATE TABLE public.newtable ( id bigint NOT NULL, name varchar NOT NULL, CONSTRAINT newtable_pk PRIMARY KEY (id) );
+
+insert into newtable (id, name) values (1, 'Антон');
+insert into newtable (id, name) values (2, 'Миша');
+insert into newtable (id, name) values (3, 'Иван');
+
+UPDATE public.newtable
+SET "name"='Вася'
+WHERE id=3;
+
+DELETE FROM public.newtable
+WHERE id=3;
+
+SELECT id, "name"
+FROM public.newtable;
+
+https://docs.liquibase.com/concepts/changelogs/xml-format.html
+https://docs.liquibase.com/concepts/changelogs/sql-format.html
