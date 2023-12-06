@@ -1,5 +1,5 @@
 # Module 8. HTML. CSS. JavaScript
-Ссылка: https://sberuniversity.online/programs/17645/item/808103
+Ссылка: https://sberuniversity.online/programs/21296/item/1250978
 
 ## Описание задачи
 Необходимо реализовать ToDoList.
