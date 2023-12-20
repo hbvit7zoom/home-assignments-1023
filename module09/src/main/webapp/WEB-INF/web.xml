@@ -1,0 +1,12 @@
+<web-app>
+<!--    <display-name>Module 09</display-name>-->
+<!--    <servlet>-->
+<!--        <servlet-name>FirstServlet Name</servlet-name>-->
+<!--        <servlet-class>ru.sberbank.jd.controller.FirstServlet</servlet-class>-->
+<!--    </servlet>-->
+<!--    -->
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>FirstServlet Name</servlet-name>-->
+<!--        <url-pattern>/hello/**</url-pattern>-->
+<!--    </servlet-mapping>-->
+</web-app>

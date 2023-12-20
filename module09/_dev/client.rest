@@ -1,0 +1,9 @@
+GET http://localhost:8080/module09_war_exploded/hello?param1=value1&param2=value2
+
+###
+POST http://localhost:8080/module09_war_exploded/calculator/sum
+
+{
+    "value1": 1,
+    "value2": 5
+}
