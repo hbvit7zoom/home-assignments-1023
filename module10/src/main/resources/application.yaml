@@ -1,0 +1,9 @@
+server:
+  port: 8090
+
+app:
+  value: 1
+  client-service:
+    url: http://blabla.ru
+    stub-mode: ${CLIENT_SERVICE_STUB}
+
