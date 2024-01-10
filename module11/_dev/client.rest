@@ -1,0 +1,25 @@
+GET http://localhost:8080/out/params?param1=v1&param2=v2
+user-x: user1
+
+###
+GET http://localhost:8080/out/params/all?param1=1&p2=2&p3=3
+user-x: user1
+
+###
+GET http://localhost:8080/out/id1
+
+###
+POST http://localhost:8080/tasks
+Content-Type: application/json;charset=UTF-8
+
+{
+    "description": "body of task",
+    "summary": "Title of task",
+    "owner": "owner of task"
+}
+
+###
+GET http://localhost:8080/tasks/986912e2-ec86-4f1b-94bf-bcd85f9c963e
+
+###
+GET http://localhost:8080/tasks/986912e2-ec86-4f1b-94bf-bcd85f9c963

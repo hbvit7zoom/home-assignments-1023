@@ -10,7 +10,7 @@
     <artifactId>module10</artifactId>
     <packaging>jar</packaging>
 
-    <name>module09</name>
+    <name>module10</name>
     <url>http://maven.apache.org</url>
 
     <properties>
