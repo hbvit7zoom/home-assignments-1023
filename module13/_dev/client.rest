@@ -1,0 +1,12 @@
+GET http://localhost:8080/users/1
+Authorization: Basic dXNlcjpkNWVjZmYwOS1iOWQ3LTQwZmQtYWI5MS1lZTk3YmYxMGRkZmU=
+
+###
+GET http://localhost:8080/users/1
+iv-user: userAdmin
+roles: ADMIN
+
+###
+GET http://localhost:8080/users/1
+iv-user: userAdmin
+roles: ADMIN
